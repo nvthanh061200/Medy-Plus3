@@ -513,11 +513,11 @@
     color: rgb(255, 255, 255);
 }
 
-.slider-btn{
+/* .slider-btn{
     position: absolute;
     width: 100%;
     top: 50%;
-}
+} */
 
 .slider-btn-item-L{
 
@@ -1134,20 +1134,4 @@
 .footer-bottom-text{
     color: #a5a5a5;
     font-size: 12px;
-}
-@media(max-width: 768px) {
-    .container{
-        margin: 0 20px;
-    }
-}
-.thu1{
-    height: 500px;
-    background-color: #0ca8c9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-.thju2{
-    background-color: #696969;
 }

@@ -1,0 +1,13 @@
+
+.categories{
+    float: left;
+    display: table;
+    height: 1000px;
+}
+.bar-categories{
+    display: table-cell;
+    vertical-align: middle;
+}
+.item2{
+    float: right;
+}
