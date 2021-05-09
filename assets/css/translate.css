@@ -1,0 +1,57 @@
+
+/*begin: translate  */
+.setting-translate{
+    float: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: #bababa;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.translate{
+    padding: 10px 0;
+}
+.current_translate{
+    cursor:pointer;
+    overflow:hidden;
+}
+.translate.selected{
+    display:none;
+}
+  
+.translate img, 
+.translate span.translate-txt{
+    display:inline-block;
+    margin-left: 10px;
+    vertical-align:middle;
+}
+.translate img{
+    width: 17px;
+}
+.translate span.fa-chevron-down{
+    margin-left: 30px;
+}
+.more_translate{
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden; 
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 39px;
+    width: 165px;
+    right: -27px;
+}
+.setting-translate.active2 .more_translate{
+    opacity: 1;
+    visibility: visible;
+    background: #000; 
+    display: block;
+}
+.more_translate.active2{
+    opacity:1;
+    transform:translateY(-0px);
+}
