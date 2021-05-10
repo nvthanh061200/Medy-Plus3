@@ -27,6 +27,11 @@
             <div class="header-top">
                 <div class="container">
                     <div class="container-wrap">
+                        <div class="header-top-contro">
+                            <p>Support</p>
+                            <span class="fa fa-bars" aria-hidden="true"></span>
+                        </div>
+
                         <div class="header-top-content">
                             <div class="header-top-address">
                                 <div class="header-top-img ">
@@ -56,15 +61,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- translate -->
-                        <!-- <div class="header-top-content-translate">
-                            <div class="header-top-content-translate-image">
-                                <img src="assets/image/img/flag.png" alt="co">
-                            </div>
-                            <span class="header-top-content-translate-text" >english</span>
-                            <span class="fa fa-chevron-down"></span>
-                        </div>
-                         -->
+            
                         <div class="setting-translate">
                             <div class="current_translate">
                                 <div class="translate">
@@ -115,6 +112,37 @@
                             </div>
                         </div>
                         <!-- end: translate -->
+
+
+                        <div class="header-top-content-repson">
+                            <div class="header-top-address">
+                                <div class="header-top-img ">
+                                   <span> <i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="header-top-text header-top-text1">
+                                    <span class="header__address-address-item-text-title">Find Us <br></span>
+                                    <span class="header__address-address-item-text-description">325 admiral unit, North cost, USA</span>
+                                </div>
+                            </div>
+                            <div class="header-top-email">
+                                <div class="header-top-img">
+                                    <span class="fa fa-envelope"></span>
+                                </div>
+                                <div class="header-top-text header-top-text2">
+                                    <span class="header__address-address-item-text-title">Email Us <br></span>
+                                    <span class="header__address-address-item-text-description">admin@medyplus.com</span>
+                                </div>
+                            </div>
+                            <div class="header-top-call">
+                                <div class="header-top-img header-top-text3">
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                </div>
+                                <div class="header-top-text">
+                                    <span class="header__address-address-item-text-title">Call Us Now  <br></span>
+                                    <span class="header__address-address-item-text-description">002 - 0100 843 1112</span>
+                                </div>
+                            </div>
+                        </div>
 
 
                     </div>
@@ -388,44 +416,6 @@
             </div>
         </div>
         <!------------------------- banner ------------------------->
-        <!-- <div class="banner">
-            <div class="container banner-container">
-                <div class="banner-container-left">
-                    <div class="banner-container-left-item">
-                        <img src="assets/image/img/banner1.png" alt="">
-                    </div>
-
-                    <div class="banner-container-left-content">
-                        <ul class="banner-container-left-content-countdown">
-                            <li><strong id="days">230</strong> <br> DAYS</li>
-                            <li><strong id="hours">24</strong> <br> HRS</li>
-                            <li><strong id="minutes">07</strong> <br> MINS</li>
-                            <li><strong id="seconds">15</strong> <br> SEC</li>
-
-                        </ul>
-                        <span class="banner-container-left-content-title">BEAUTY & COSMETICS</span>
-                        <p class="banner-container-left-content-sub">Sale up to <strong>40%</strong> off</p>
-                    </div>
-                </div>
-                <div class="banner-container-right">
-                        <div class="banner-container-top">
-                            <img src="./assets/image/img/banner2.png" alt="">
-                            <div class="banner-container-top-content">
-                                <span class="banner-container-top-content-strong">30%</span> <br>
-                                <span class="banner-container-top-content-discount">Discount</span> <br>
-                                <span class="banner-container-top-content-infor">For Dietary Supplement</span>
-                            </div>
-                        </div>
-                        <div class="banner-container-bottom">
-                            <img src="./assets/image/img/banner3.png" alt="">
-                            <div class="banner-container-bottom-content">
-                                <span>accessories</span>
-                                <p>Sale up to <strong>20%</strong> off</p>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div> -->
 
         <div class="banner">
             <div class="container ">
@@ -433,7 +423,6 @@
                     <div class="banner-container-left">
                         <div class="banner-container-left-item">
                             <img src="assets/image/img/banner1.png" alt="">
-
                             <div class="banner-container-left-content">
                                 <ul class="banner-container-left-content-countdown">
                                     <li><strong id="days">230</strong> <br> DAYS</li>
@@ -445,7 +434,6 @@
                                 <span class="banner-container-left-content-title">BEAUTY & COSMETICS</span>
                                 <p class="banner-container-left-content-sub">Sale up to <strong>40%</strong> off</p>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="banner-container-right">
@@ -459,7 +447,6 @@
                             </div>
                             <div class="banner-container-bottom">
                                 <img src="./assets/image/img/banner3.png" alt="">
-
                                 <div class="banner-container-bottom-content">
                                     <span>accessories</span>
                                     <p>Sale up to <strong>20%</strong> off</p>
@@ -935,12 +922,53 @@
 
     <script type="text/javascript">
         $(document).on('ready', function() {
-        $(".regular").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-        });
+            $(".regular").slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+                ]
+                
+            });
         });
     </script>
 </html>

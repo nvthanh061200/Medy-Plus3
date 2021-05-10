@@ -78,6 +78,19 @@ jQuery(document).ready(function($){
         })
 
     }
+
+    if($(".header-top-contro").length>0){
+
+      $("html").click(()=>{
+        $(".header-top-content-repson").hide();
+      })
+      $(".container-wrap").click((event)=>{
+        event.stopPropagation();
+      });
+      $(".header-top-contro").click(()=>{
+        $(".header-top-content-repson").toggle();
+      })
+    }
     
     if($(".autocompelte").length>0){
         var countries = ["Thanh Van Nguyen","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla",
@@ -115,6 +128,7 @@ jQuery(document).ready(function($){
     if($(".slider").length>0){
         showSlides(slideIndex=1);
     }
+
 
 })
     // begin: slider
