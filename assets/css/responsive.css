@@ -614,6 +614,34 @@
     .list_product{
         display: none;
     }
+    .header-bottom-contro{
+        display: block;
+        font-size: 19px;
+        color: #fff;
+    }
+    .header-bottom-nav{
+        display: none;
+    }
+    .header__navbar-nav-list-contro{
+        display: block;
+        position: absolute;
+        top: 80%;
+        border-radius: 2px;
+        right: 0;
+        background-color: #0ca8c9;
+        z-index: 20;
+        width: 290px;
+        box-shadow: 1px 1px 4px #000;
+        display: none;
+    }
+    .header__navbar-nav-item{
+        border-bottom: 1px solid #fff;
+        margin: 0;
+        padding: 8px 15px;
+    }
+    .header__navbar-nav-item:last-child{
+        border: none;
+    }
 
 
 }

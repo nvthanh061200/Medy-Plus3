@@ -91,6 +91,20 @@ jQuery(document).ready(function($){
         $(".header-top-content-repson").toggle();
       })
     }
+
+
+    if($(".header-bottom").length>0){
+
+      $("html").click(()=>{
+        $(".header__navbar-nav-list-contro").hide();
+      })
+      $(".header-bottom-contro").click((event)=>{
+        event.stopPropagation();
+      });
+      $(".header-bottom-contro").click(()=>{
+        $(".header__navbar-nav-list-contro").toggle();
+      })
+    }
     
     if($(".autocompelte").length>0){
         var countries = ["Thanh Van Nguyen","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla",

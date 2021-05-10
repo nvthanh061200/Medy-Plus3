@@ -279,6 +279,12 @@
 }  
 
 /*----------------------- header-bottom -----------------------*/
+.header-bottom-contro{
+    display: none;
+}
+.header__navbar-nav-list-contro{
+    display: none;
+}
 .header-bottom{
     background-color: var(--primary-color);
 }
