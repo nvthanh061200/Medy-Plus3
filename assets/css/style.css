@@ -380,7 +380,7 @@
 }
 .slider-banner img{
     width: 100%;
-    height: 750px;
+    height: auto;
 }
 
 .slider-title{
@@ -614,7 +614,7 @@
     color: #8f8f8f;
 }
 /*----------------------- banner  -----------------------*/
-.banner-container{
+/* .banner-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -767,7 +767,181 @@
     float: right;
     margin-right: 28px;
     margin-top: 40px;
+} */
+/*------------------------ banner 2 ------------------ */
+.banner-container{
+    display: flex;
+    flex-wrap: wrap;
 }
+.banner-container-left{
+    flex: 0 0 58.3%;
+    max-width: 58.3%;
+
+}
+.banner-container-right{
+    flex: 0 0 41.7%;
+    max-width: 41.7%;
+}
+.banner-container-left-item{
+    background-color: #f0f0f0;
+    padding-top: 38px;
+    padding-bottom: 105px;
+    text-align: center;
+    max-width: 654px;
+    width: 100%;
+    position: relative;
+
+}
+.banner-container-top{
+    background-color: #f0f0f0;
+    width: 457px;
+    height: 240px;
+    float: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 28px;
+
+}
+.banner-container-bottom{
+    background-color: #f0f0f0;
+    width: 457px;
+    height: 240px;
+    margin-top: 30px;
+    float: right;
+    position: relative;
+    padding-right: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 28px;
+}
+.banner-container-bottom-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+.banner-container-top-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+.banner-container-left-content-countdown{
+    display: flex;
+    justify-content: center;
+}
+.banner-container-left-content-countdown li{
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+}
+.banner-container-left-content-countdown strong{
+    color: var(--primary-color);
+    font-size: 21px;
+}
+.banner-container-left-content-countdown li{
+    width: 60px;
+    height: 62px;
+    background-color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top: 6px;
+}
+.banner-container-left-content-countdown{
+    display: flex;
+    justify-content: center;
+}
+.banner-container-left-content-countdown li{
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+}
+.banner-container-left-content-countdown strong{
+    color: var(--primary-color);
+    font-size: 21px;
+}
+.banner-container-left-content-countdown li{
+    width: 60px;
+    height: 62px;
+    background-color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top: 6px;
+}
+
+.banner-container-left-content{
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-container-left-content-title{
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.banner-container-left-content-sub{
+    font-size: 18px;
+    color: #8f8f8f;
+    margin: 0;
+}
+.banner-container-left-content-sub strong{
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--primary-color);
+}
+
+.banner-container-top-content{
+    position: absolute;
+    left: 30px;
+    top: 54%;
+    transform: translateY(-50%);
+}
+.banner-container-top-content-strong{
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 0;
+}
+.banner-container-top-content-discount{
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner-container-top-content-infor{
+    font-size: 18px;
+    color: #8f8f8f;
+    margin: 0;
+    padding: 0;
+}
+.banner-container-bottom-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+.banner-container-bottom-content span{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner-container-bottom-content p{
+    font-size: 18px;
+    color: #8f8f8f;
+    margin: 0;
+}
+.banner-container-bottom-content strong{
+    color: var(--primary-color);
+}
+
 /*----------------------- Top selling  -----------------------*/
 .top-selling-header{
     position: relative;
@@ -776,6 +950,7 @@
     align-items: center;
     margin-bottom: 24px;
     margin-top: 22px;
+    
 }
 .top-selling-header-controller{
     font-size: 32px;
@@ -808,11 +983,15 @@
 }
 .list_product{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 .item-product{
-    width: 23.15%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 14.5px 0 15px;
+    margin-bottom: 25px;
 }
 .item-product-image{
     padding: 37px 0 40px;

@@ -1,13 +1,59 @@
-
-.categories{
-    float: left;
-    display: table;
+.banner{
     height: 1000px;
 }
-.bar-categories{
-    display: table-cell;
-    vertical-align: middle;
+.site-wrapper{
+    max-width: 1140px;
+    width: 1005;
+    margin: 0 auto;
+}
+.wrap-banner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hot-del{
+    flex: 0 0 58.3%;
+    width: 58.3%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    float: left;
+
+}
+.hot-right{
+    flex: 0 0 41.7%;
+    width: 41.7%;
+}
+.item1{
+    background: #f0f0f0;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 109px;
+    border: 1px solid #f0f0f0;
+    max-width: 653px;
+    width: 100%;
 }
 .item2{
-    float: right;
+    text-align: right;
+    max-width: 457px;
+    width: 100%;
+    text-align: right;
+    background-color:#f0f0f0;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.item3{
+    margin-top: 30px;
+    text-align: right;
+    background-color:#f0f0f0;
+    max-width: 457px;
+    height: 240px;
+    width: 100%;
+    display: table ;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+
 }
