@@ -858,6 +858,11 @@
     color: #000;
     font-weight: 600;
 }
+
+.item-product-content-infor:hover,
+.item-product-content-name:hover{
+    color: #0ca8c9;
+}
 .item-product-content-price{
     font-size: 13px;
     line-height: 36px;
@@ -917,6 +922,10 @@
     color: #000;
     font-size: 16px;
 }
+.latest-content-title:hover a{
+    color: #0ca8c9;
+}
+
 .new-text-content{
     padding-top: 5px;
 }
@@ -1161,4 +1170,13 @@
 .footer-bottom-text{
     color: #a5a5a5;
     font-size: 12px;
+}
+
+.slick-prev.slick-arrow.slick-disabled,
+.slick-next.slick-arrow{
+    display: none !important;
+}
+
+.header-top-contro{
+    display: none;
 }
