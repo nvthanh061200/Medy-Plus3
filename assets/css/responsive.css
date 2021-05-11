@@ -15,7 +15,7 @@
         display: none;
     }
 }
-@media(max-width: 1920px) {
+@media (min-width: 1919) and (max-width: 1920px) {
     .slider-banner img{
         height: 750px;
     }
@@ -23,6 +23,15 @@
         display: none;
     }
 }
+@media (max-width: 1918px) {
+    .slider-banner img{
+        height: auto;;
+    }
+    .header-top-content-repson{
+        display: none;
+    }
+}
+
 @media (max-width:1199px){
     .header-top-contro{
         display: none;

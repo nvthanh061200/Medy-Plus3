@@ -122,6 +122,21 @@
 }
 .header-middle-setting{
     margin: 0 20px;
+    position: relative;
+}
+.header-middle-setting-content{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ccc;
+    width: 120px;
+    border-radius: 2px;
+    z-index: 30;
+    padding: 0 10px;
+}
+.header-middle-setting-content-item:first-child{
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
 }
 .header__search-search-input-search-form {
     position: relative;
@@ -241,6 +256,8 @@
 }
 .cart-item-product{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cart-item-price-product{
     font-size: 15px;
@@ -1104,6 +1121,9 @@
 }
 .sub-contact-us a span.fa-envelope-o{
     margin-right: 20px;
+}
+.location-map-contacts:hover{
+    color: #0ca8c9;
 }
 .sub-contact-us a:hover{
     color: #0ca8c9;
