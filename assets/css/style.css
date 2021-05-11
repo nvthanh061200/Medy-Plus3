@@ -838,7 +838,7 @@
     flex: 0 0 25%;
     max-width: 25%;
     padding: 0 14.5px 0 15px;
-    margin-bottom: 25px;
+    margin-bottom: 39px;
 }
 .item-product-image{
     padding: 37px 0 40px;
@@ -910,7 +910,7 @@
 .new-content{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
 }
 .wrapper-latest-content{
     flex:  0 0 33.33333%;
@@ -944,7 +944,7 @@
     width: 100%;
     background-color: #000;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
 }
 .newsletter-header{
     color: #000;
@@ -1008,7 +1008,7 @@
     flex-wrap: wrap;
 }
 .brands{
-    padding: 62px 0;
+    padding: 60px 0;
 }
 .brands-item{
     flex: 0 0 20%;
@@ -1030,7 +1030,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     padding-top: 19px;
 }
 .contact-us-footer, .company-footer, .categories-footer, .quick-link{
@@ -1179,4 +1179,7 @@
 
 .header-top-contro{
     display: none;
+}
+.autocompelte2{
+    position: relative;
 }

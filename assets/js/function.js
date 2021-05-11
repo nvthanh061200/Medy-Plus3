@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
       })
     }
     
-    if($(".autocompelte").length>0){
+    if($(".autocompelte").length>0 || $(".autocompelte2").length>0){
         var countries = ["Thanh Van Nguyen","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla",
         "Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan",
         "Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan",
@@ -135,6 +135,7 @@ jQuery(document).ready(function($){
         "Thuốc kháng sinh","Thuốc đau rạ dày","thuốc tẩy run","thuốc nhiệt miệng","thuốc táo bón"
         ];
         autocomplete(document.getElementById("myInput"), countries);
+        autocomplete(document.getElementById("myInput2"), countries);
     }
 
     
