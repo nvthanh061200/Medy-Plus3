@@ -944,6 +944,15 @@
     .header-middle-setting {
         margin: 0 13px;
     }
+    .new-header{
+        padding-top: 40px;
+    }
+    .new-content{
+        padding-bottom: 13px;
+    }
+    .new-header-block{
+        top: 58%;
+    }
 }
 
 
