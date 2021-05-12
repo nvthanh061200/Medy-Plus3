@@ -184,8 +184,6 @@ jQuery(document).ready(function($){
         })
       }
     }
-
-
 });
 
 
