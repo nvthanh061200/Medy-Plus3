@@ -14,6 +14,9 @@
     .header__search-search-input-contro-320{
         display: none;
     }
+    .slider-content__content{
+        top: 168px;
+    }
 }
 @media (min-width: 1919) and (max-width: 1920px) {
     .slider-banner img{
@@ -562,6 +565,9 @@
     }
 }
 @media (max-width:426px){
+    .top-selling-header-controller{
+        font-size: 18px;
+    }
     .header-bottom-nav{
         display: none;
     }
@@ -626,6 +632,9 @@
     }
 }
 @media (max-width: 376px){
+    .top-selling-header-controller{
+        font-size: 16px;
+    }
     .fact-item-image img{
         width: 31px;
         height: auto;

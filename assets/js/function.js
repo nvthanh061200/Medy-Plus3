@@ -160,19 +160,33 @@ jQuery(document).ready(function($){
         showSlides(slideIndex=1);
     }
     //dot slider
-    let my_dot=document.querySelectorAll(".dot");
-    my_dot[0].addEventListener('click',()=>{
-      showSlides(slideIndex = 1);
-    })
-    my_dot[1].addEventListener('click',()=>{
-      showSlides(slideIndex = 2);
+    // cách 1
+    // let my_dot=document.querySelectorAll(".dot");
+    // my_dot[0].addEventListener('click',()=>{
+    //   showSlides(slideIndex = 1);
+    // })
+    // my_dot[1].addEventListener('click',()=>{
+    //   showSlides(slideIndex = 2);
 
-    })
-    my_dot[2].addEventListener('click',()=>{
-      showSlides(slideIndex = 3);
-    })
+    // })
+    // my_dot[2].addEventListener('click',()=>{
+    //   showSlides(slideIndex = 3);
+    // })
 
-})
+    // cách 2
+    if($(".slider-dot").length>0){
+      let dots=document.querySelectorAll('.dot');
+      for(let i=0;i<dots.length;i++){
+        dots[i].addEventListener('click',()=>{
+          let value=dots[i].getAttribute("data-index");
+          let n=parseInt(value);
+          showSlides(slideIndex = n+1);
+        })
+      }
+    }
+
+
+});
 
 
     // begin: slider
