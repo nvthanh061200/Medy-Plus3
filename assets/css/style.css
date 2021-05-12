@@ -217,7 +217,7 @@
  .header-middle-cart-text{
      position: absolute;
      top: 0;
-     right: -6px;
+     right: -2px;
      width: 15px;
      height: 15px;
      display: flex;
@@ -227,6 +227,7 @@
      color: var(--white-color);
      border-radius: 10px;
      font-size: 10px;
+     z-index: 100;
 
  }
  /* cart  */
