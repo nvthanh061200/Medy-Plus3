@@ -39,6 +39,10 @@
     color: var(--white-color);
     font-size: 12px;
 }
+.header-top-text a{
+    color: #fff;
+    font-size: 12px;
+}
 .header-top-text1{
     width: 198px;
 }
@@ -198,9 +202,11 @@
 /* setting  */
 
  /* cart  */
+ .header-middle-cart-img,
  .header-middle-cart{
      position: relative;
-     margin-right: 7px;
+     margin-right: 3px;
+     cursor: pointer;
  }
  .header-middle-cart-text{
      position: absolute;
@@ -321,6 +327,7 @@
 .header-bottom-controller{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .header-bottom-controller-text{
     color: var(--white-color);
@@ -406,6 +413,8 @@
     font-size: 70px;
     font-weight: 500;
     line-height: 90px;
+    padding: 0;
+    margin-bottom: 0;
 }
 .slider-title strong{
     color: var(--primary-color);
@@ -413,22 +422,24 @@
 .slider__description {
     font-size: 18px;
     color: #8f8f8f;
-    margin-top: 3px;
-    line-height: 56px;
+    margin-top: auto;
 }
 .slider-btn{
-    margin-top: 29px;
+    /* margin-top: 36px; */
 }
 .slider-btn a{
     font-size: 16px;
     color: var(--black-color);
-    font-weight: 500;
+    font-weight: 900;
     border-bottom: 2px solid var(--primary-color);
     line-height: 33px;
 }
 .slider-content__content{
     position: absolute;
-    top: 218px;
+    top: 168px;
+    left: unset;
+    letter-spacing: 0.5px;
+    line-height: 3;
 }
 .slider__controller{
     display: flex;
@@ -615,12 +626,16 @@
     margin-right: 20px;
 }
 .fact-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.fact-item{
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 0px;
-    padding-top: 48px;
-    padding-bottom: 60px;
+    padding-top: 38px;
+    padding-bottom: 46px;
 }
 .fact-item-text,
 .fact-item-description{
@@ -628,6 +643,7 @@
     line-height: 24px;
     color: #000;
     font-weight: 500;
+    cursor: pointer;
 }
 .fact-item-description{
     color: #8f8f8f;
@@ -666,6 +682,7 @@
     justify-content: flex-end;
     padding-right: 28px;
 
+
 }
 .banner-container-bottom{
     background-color: #f0f0f0;
@@ -683,14 +700,14 @@
 }
 .banner-container-bottom-content{
     position: absolute;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     left: 30px;
 }
 .banner-container-top-content{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 48%;
+    transform: translateY(-48%);
     left: 30px;
 }
 .banner-container-left-content-countdown{
@@ -712,7 +729,7 @@
     background-color: #fff;
     margin: 0 5px;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     padding-top: 6px;
 }
 .banner-container-left-content-countdown{
@@ -785,12 +802,7 @@
     margin: 0;
     padding: 0;
 }
-.banner-container-bottom-content{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 30px;
-}
+
 .banner-container-bottom-content span{
     font-size: 30px;
     font-weight: 700;
@@ -812,7 +824,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     margin-top: 22px;
     
 }
@@ -855,13 +867,22 @@
     flex: 0 0 25%;
     max-width: 25%;
     padding: 0 14.5px 0 15px;
-    margin-bottom: 39px;
+    margin-bottom: 42px;
+}
+.item-product:first-child{
+    padding-left: 0px;
+}
+.item-product:last-child{
+    padding-right: 0;
 }
 .item-product-image{
     padding: 37px 0 40px;
     background: #f0f0f0;
     text-align: center;
     width: 100%;
+}
+.item-product-infor-name{
+    cursor: pointer;
 }
 
 .item-product-content{
@@ -909,13 +930,14 @@
     font-size: 90px;
     color: #ebebeb;
     font-weight: 900;
+    margin: 0;
 }
 .new-header-block{
     font-size: 42px;
     position: absolute;
-    top: 58%;
+    top: 36%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-51%, -50%);
     font-weight: 700;
 }
 .slick-dots{
@@ -968,8 +990,8 @@
     text-align: center;
 }
 .newsletter-title{
-    font-size: 33px;
-    line-height: 26px;
+    font-size: 31px;
+    line-height: 30px;
     color: #fff;
     margin: 0pc;
 }
@@ -980,7 +1002,7 @@
     margin-top: 20px;
 }
 .newsletter-feeback{
-    margin-top: 66px;
+    margin-top: 60px;
     max-width: 770px;
     width: 100%;
     height: 70px;

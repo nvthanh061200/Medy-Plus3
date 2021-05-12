@@ -9,12 +9,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/tam.css">
+    
 </head>
 <body>
-    <div class="banner">
-        <div class="site-wrapper">
-            <!-- đầy thỉ đẩn phần tử xuống hàng  -->
+    <h1><i>Image slider</i></h1>
+    <div class="window">
+      <div class="window__slider">
+        <div class="window__slider__img-container window__slider__img-container--opacity">
+          <img src="https://picsum.photos/id/1067/500/400" alt="city view from sky" />
+        </div>
+        <div class="window__slider__img-container">
+          <img src="https://picsum.photos/id/1076/500/400" alt="tall building view from bottom" />
+        </div>
+        <div class="window__slider__img-container">
+          <img src="https://picsum.photos/id/111/500/400" alt="old model of a car" />
+        </div>
+        <div class="window__slider__img-container">
+          <img src="https://picsum.photos/id/249/500/400" alt="bridge and city view from one side of river" />
+        </div>
+        <div class="window__slider__img-container">
+          <img src="https://picsum.photos/id/724/500/400" alt="forest and sky view, aurora borealis in the sky" />
+        </div>
+      </div>
+      
+      <button class="window__slide-left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="window__slide-right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="window__current-img">
+        <button class="window__current-img__btn window__current-img__btn--current"></button>
+        <button class="window__current-img__btn"></button>
+        <button class="window__current-img__btn"></button>
+        <button class="window__current-img__btn"></button>
+        <button class="window__current-img__btn"></button>
+      </div>
     </div>
 
 </body>
+    <script src="assets/js/function.js"></script>
 </html>
