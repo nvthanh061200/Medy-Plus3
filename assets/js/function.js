@@ -106,6 +106,22 @@ jQuery(document).ready(function($){
       })
     }
     
+
+    if($(".header-middle-setting").length>0){
+      $("html").click(function(){
+        $(".header-middle-setting-content").hide();
+      })
+      $(".header-middle-setting-img").click(function(event){
+        event.stopPropagation();
+      })
+      $(".header-middle-setting-img").click(function(){
+        $(".header-middle-setting-content").toggle();
+      })
+
+    }
+
+
+
     if($(".autocompelte").length>0 || $(".autocompelte2").length>0){
         var countries = ["Thanh Van Nguyen","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla",
         "Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan",
