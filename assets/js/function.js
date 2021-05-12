@@ -173,6 +173,8 @@ jQuery(document).ready(function($){
     })
 
 })
+
+
     // begin: slider
     function plusSlides(n) {
         showSlides(slideIndex += n);
